@@ -1,0 +1,3 @@
+This repository demonstrates a common error encountered when building Docker images: failure to locate or access the `requirements.txt` file.  The initial `Dockerfile` contains this error.  The `Dockerfile.fixed` shows the corrected version.
+
+The problem arises from how files are copied into the image and the order of commands within the Dockerfile. The solution involves ensuring the `requirements.txt` file exists and is accessible at the correct point in the build process.
